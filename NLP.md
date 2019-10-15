@@ -19,13 +19,15 @@ Have a great day
 	- word embedding的一种distributed representation实现
 	- 两种方式：Skip Gram和Common Bag of Words(CBOW)
 	- CBOW
+		- 输入词语，预测上下文
 		- 输入为词语的one-hot编码向量，向量长度为V
 		- 隐藏层包含N个神经元，只是对输入层做了加权和，没有激励函数(sigmoid/relu)
 		- 输出层也是长度为V的softmax向量
 		- 输入为语句的话，分词，one-hot编码，通过隐藏层，然后求平均值
 	- Skip Gram
+		- 输入上下文，预测词语
 		- 类似于CBOW逆向操作，输入目标presentation，输出context
 		- 输出含义可以理解为该位置每个词语出现的概率
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY2NTY4OTkxNywtMTUzNzAzMjAwM119
+eyJoaXN0b3J5IjpbMTEwMjQ3ODcwNSwtMTUzNzAzMjAwM119
 -->
