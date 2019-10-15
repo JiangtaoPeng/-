@@ -1,7 +1,7 @@
 ## Word Embedding
 Reference: [word embedding and word2vec](https://towardsdatascience.com/introduction-to-word-embedding-and-word2vec-652d0c2060fa)
 [word2vec parameter learning explained](https://arxiv.org/pdf/1411.2738.pdf)
-### 为什么需要word embedding
+### 引例
 设想一下这样一个场景：
 Have a good day
 Have a great day
@@ -26,5 +26,6 @@ word embedding的目标就是解决这样的问题，使得这样两个词之间
 		- 类似于CBOW逆向操作，输入目标presentation，输出context
 		- 输出含义可以理解为该位置每个词语出现的概率
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1MzcwMzIwMDNdfQ==
+eyJoaXN0b3J5IjpbLTIwODY5OTEwOTksLTE1MzcwMzIwMDNdfQ
+==
 -->
