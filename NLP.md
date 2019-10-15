@@ -8,14 +8,15 @@ Have a great day
 如果我们用one-hot对这两句话编码["have", "a", "good", "great", "day"] -> "good"[0,0,1,0,0]和"great"[0,0,0,1,0]之间的距离与"have"[1,0,0,0,0]和"day"[0,0,0,0,1]的距离是一样的，这显然不合理。
 我们需要使得这样两个词之间的cosine距离接近1
 ### word embedding思路
-- word embedding，词嵌入，就是将语言空间嵌入到数学空间
+- word embedding -> 就是将语言空间嵌入到数学空间
+- word embedding -> 降维
 - representation
 	- one-hot representation
 		- 认为所有的词都是独立的
 		- 维数灾难
 		- 词汇鸿沟
 	- distributed representation: 考虑词之间的依赖关系
-- word2vec
+- word2vec(降维操作)
 	- word embedding的一种distributed representation实现
 	- 两种方式：Skip Gram和Common Bag of Words(CBOW)
 	- CBOW
@@ -30,5 +31,6 @@ Have a great day
 		- 输出含义可以理解为该位置每个词语出现的概率
 		- 反向传播算法求解参数(链式求导)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE1MTAyODYzMSwtMTUzNzAzMjAwM119
+eyJoaXN0b3J5IjpbMTAwNDM2OTI1MSwxMTUxMDI4NjMxLC0xNT
+M3MDMyMDAzXX0=
 -->
