@@ -21,13 +21,14 @@ Have a great day
 	- CBOW
 		- 输入词语，预测上下文
 		- 输入为词语的one-hot编码向量，向量长度为V
-		- 隐藏层包含N个神经元，只是对输入层做了加权和，没有激励函数(sigmoid/relu)
+		- 隐藏层包含N个神经元，只是对输入层做了加权和，没有激励函数(sigmoid/relu)，或者说激励函数是线性函数
 		- 输出层也是长度为V的softmax向量
 		- 输入为语句的话，分词，one-hot编码，通过隐藏层，然后求平均值
 	- Skip Gram
 		- 输入上下文，预测词语
 		- 类似于CBOW逆向操作，输入目标presentation，输出context
 		- 输出含义可以理解为该位置每个词语出现的概率
+		- 反向传播算法求解参数(链式求导)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTEwMjQ3ODcwNSwtMTUzNzAzMjAwM119
+eyJoaXN0b3J5IjpbMTE1MTAyODYzMSwtMTUzNzAzMjAwM119
 -->
