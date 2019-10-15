@@ -6,8 +6,9 @@ Reference: [word embedding and word2vec](https://towardsdatascience.com/introduc
 Have a good day
 Have a great day
 如果我们用one-hot对这两句话编码["have", "a", "good", "great", "day"] -> "good"[0,0,1,0,0]和"great"[0,0,0,1,0]之间的距离与"have"[1,0,0,0,0]和"day"[0,0,0,0,1]的距离是一样的，这显然不合理。
-word embedding的目标就是解决这样的问题，使得这样两个词之间的cosine距离接近1
+我们需要使得这样两个词之间的cosine距离接近1
 ### word embedding思路
+- word embedding，词嵌入，就是将语言空间嵌入到数学空间
 - representation
 	- one-hot representation
 		- 认为所有的词都是独立的
@@ -15,7 +16,7 @@ word embedding的目标就是解决这样的问题，使得这样两个词之间
 		- 词汇鸿沟
 	- distributed representation: 考虑词之间的依赖关系
 - word2vec
-	- word embedding的一种实现
+	- word embedding的一种distributed representation实现
 	- 两种方式：Skip Gram和Common Bag of Words(CBOW)
 	- CBOW
 		- 输入为词语的one-hot编码向量，向量长度为V
@@ -26,6 +27,5 @@ word embedding的目标就是解决这样的问题，使得这样两个词之间
 		- 类似于CBOW逆向操作，输入目标presentation，输出context
 		- 输出含义可以理解为该位置每个词语出现的概率
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwODY5OTEwOTksLTE1MzcwMzIwMDNdfQ
-==
+eyJoaXN0b3J5IjpbLTY2NTY4OTkxNywtMTUzNzAzMjAwM119
 -->
